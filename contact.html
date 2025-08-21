@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>צור קשר • ד"ר כהן – רופא משפחה</title>
+  <meta name="description" content="צור קשר לקביעת תור או לכל שאלה. זמינות גבוהה ומענה מהיר." />
+  <link rel="icon" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" aria-label="בית">
+          <img src="assets/images/logo.png" alt="לוגו הקליניקה" class="logo" />
+        </a>
+        <div class="nav-links">
+          <a href="index.html">בית</a>
+          <a href="about.html">אודות</a>
+          <a href="contact.html" aria-current="page">צור קשר</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">צור קשר</h1>
+        <p class="section-sub">ממלאים את הפרטים ונחזור אליכם בהקדם</p>
+
+        <form class="form" action="#" method="post" novalidate>
+          <div class="input-row">
+            <div>
+              <label for="name">שם מלא</label>
+              <input id="name" name="name" type="text" placeholder="יוסי לוי" required />
+            </div>
+            <div>
+              <label for="phone">טלפון</label>
+              <input id="phone" name="phone" type="tel" placeholder="05X-XXXXXXX" required />
+            </div>
+          </div>
+
+          <div class="spacer-16"></div>
+
+          <div class="input-row">
+            <div>
+              <label for="email">אימייל (לא חובה)</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" />
+            </div>
+            <div>
+              <label for="topic">נושא</label>
+              <select id="topic" name="topic">
+                <option>קביעת תור</option>
+                <option>שאלה רפואית</option>
+                <option>עזרה טכנית</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="spacer-16"></div>
+
+          <div>
+            <label for="message">הודעה</label>
+            <textarea id="message" name="message" placeholder="איך אפשר לעזור?" required></textarea>
+          </div>
+
+          <div class="spacer-28"></div>
+          <button class="btn btn-primary" type="submit">שלח הודעה</button>
+          <a class="btn btn-ghost" href="tel:035551234">התקשר עכשיו</a>
+        </form>
+
+        <div class="spacer-28"></div>
+
+        <div class="surface" style="padding:22px;">
+          <strong>פרטי יצירת קשר:</strong>
+          <p class="muted" style="margin:8px 0 0;">
+            טלפון: <a href="tel:035551234">03-5551234</a> • אימייל: <a href="mailto:clinic@example.com">clinic@example.com</a><br />
+            כתובת: רח' הבריאות 10, תל אביב
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row">
+      <span>© כל הזכויות שמורות • ד"ר כהן</span>
+      <span class="muted">טלפון: 03-5551234 • כתובת: רח' הבריאות 10, תל אביב</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

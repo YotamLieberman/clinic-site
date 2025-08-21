@@ -1,31 +1,97 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ד"ר כהן – רופא משפחה</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="קליניקה לרפואת משפחה: טיפול אישי, מקצועי ואמין לכל המשפחה." />
+  <link rel="icon" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <img src="assets/images/logo.png" alt="לוגו" class="logo">
-      <ul>
-        <li><a href="index.html">בית</a></li>
-        <li><a href="about.html">אודות</a></li>
-        <li><a href="contact.html">צור קשר</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <a href="index.html" aria-label="בית">
+          <img src="assets/images/logo.png" alt="לוגו הקליניקה" class="logo" />
+        </a>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">בית</a>
+          <a href="about.html">אודות</a>
+          <a href="contact.html">צור קשר</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>ברוכים הבאים לקליניקה של ד"ר כהן</h1>
-    <p>טיפול אישי, מקצועי ואמין לכל המשפחה</p>
-    <a href="contact.html" class="btn">קבע תור</a>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h1 class="hero-title">ברוכים הבאים לקליניקה של ד"ר כהן</h1>
+          <p class="hero-sub">טיפול אישי, מקצועי ואמין לכל המשפחה – עם דגש על יחס אנושי וזמינות.</p>
+          <a class="btn btn-primary" href="contact.html">קבע תור</a>
+          <a class="btn btn-ghost" href="about.html">עוד עליי</a>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/images/doctor.jpg" alt="ד"ר כהן בקליניקה" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">שירותי הקליניקה</h2>
+        <p class="section-sub">מגוון טיפולים מותאמים לכל הגילאים</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon-badge">🩺</div>
+            <h3>רפואת משפחה</h3>
+            <p>מעקב רפואי שוטף ואבחון מהיר לבעיות שכיחות וחריגות.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon-badge">🧪</div>
+            <h3>בדיקות והפניות</h3>
+            <p>הפניה לבדיקות רלוונטיות ותיאום מהיר לתוצאות מדויקות.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon-badge">💬</div>
+            <h3>ייעוץ אונליין</h3>
+            <p>שיחה מאובטחת מהבית למקרים שאינם מחייבים הגעה.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">מה הלקוחות אומרים</h2>
+        <div class="cards">
+          <blockquote class="quote">
+            <p>“רופא מקצועי עם לב ענק. ממליצה בחום.”</p>
+            <div class="name">— נועה לוי</div>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“זמינות, סבלנות והסברים ברורים. חוויה מצוינת.”</p>
+            <div class="name">— אורי בר</div>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“נתן מענה מדויק ומהיר. תודה רבה!”</p>
+            <div class="name">— הדס מ.</div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© כל הזכויות שמורות לד"ר כהן</p>
+    <div class="container row">
+      <span>© כל הזכויות שמורות • ד"ר כהן</span>
+      <span class="muted">טלפון: 03-5551234 • כתובת: רח' הבריאות 10, תל אביב</span>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
